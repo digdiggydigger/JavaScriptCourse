@@ -31,3 +31,8 @@ console.log(birthYear);
 const now = 2021;
 const ageEthan = 2021 - 2000;
 console.log(ageEthan * 2);
+
+const averagePopulation = "16000000";
+let population = "7000000";
+
+console.log(averagePopulation - population);
