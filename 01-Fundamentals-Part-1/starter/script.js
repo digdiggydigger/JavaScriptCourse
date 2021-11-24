@@ -36,3 +36,5 @@ const averagePopulation = "16000000";
 let population = "7000000";
 
 console.log(averagePopulation - population);
+
+// Just some test code
