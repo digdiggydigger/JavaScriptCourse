@@ -90,12 +90,12 @@
 
 // 01 - Lesson 24 24/11
 
-const hasDriversLicense = true; // Variable A
-const hasGoodVision = false; // Variable B
+// const hasDriversLicense = true; // Variable A
+// const hasGoodVision = false; // Variable B
 
-console.log(hasDriversLicense && hasGoodVision); // This is JS's AND operator
-console.log(hasDriversLicense || hasGoodVision); // This is JS's OR operator
-console.log(!hasDriversLicense);
+// console.log(hasDriversLicense && hasGoodVision); // This is JS's AND operator
+// console.log(hasDriversLicense || hasGoodVision); // This is JS's OR operator
+// console.log(!hasDriversLicense);
 
 // if (hasDriversLicense && hasGoodVision) {
 //     console.log('You are able to drive!');
@@ -103,11 +103,45 @@ console.log(!hasDriversLicense);
 //     console.log('You cannot drive!');
 // }
 
-const isTired = false; // Variable C
-console.log(hasDriversLicense && hasGoodVision && isTired);
+// const isTired = false; // Variable C
+// console.log(hasDriversLicense && hasGoodVision && isTired);
 
-if (hasDriversLicense && hasGoodVision && !isTired) {
-    console.log('You are able now to drive!');
+// if (hasDriversLicense && hasGoodVision && !isTired) {
+//     console.log('You are able now to drive!');
+// } else {
+//     console.log('You cannot drive today!');
+// }
+
+
+// const doplphinsScore = (96 + 108 + 89) / 3;
+// const koalasScore = (88 + 100 + 110) / 3;
+// const minScore = 100;
+
+// console.log('Dolphins: ', doplphinsScore, 'Koalas:', koalasScore);
+
+// if (doplphinsScore > koalasScore) {
+//     console.log('Dolphins win the trophy!');
+// } else if  (koalasScore > doplphinsScore) {
+//     console.log('Koalas win the trophy!');
+// } else if () {
+//     console.log('Its a draw! Both teams win!');
+// }
+
+// BONUS 1
+// const doplphinsScore = (97 + 112 + 81) / 3;
+// const koalasScore = (109 + 95 + 86) / 3;
+const doplphinsScore = (97 + 112 + 80) / 3;
+const koalasScore = (109 + 95 + 50) / 3;
+const minScore = 100;
+
+console.log('Dolphins: ', doplphinsScore, 'Koalas:', koalasScore);
+
+if (doplphinsScore > koalasScore && doplphinsScore >= minScore) {
+    console.log('Dolphins win the trophy!');
+} else if  (koalasScore > doplphinsScore && koalasScore >= minScore) {
+    console.log('Koalas win the trophy!');
+} else if (doplphinsScore === koalasScore && doplphinsScore >= minScore && koalasScore >= 100) {
+    console.log('Its a draw! Both teams win!');
 } else {
-    console.log('You cannot drive today!');
+    console.log('No one wins the trophy :(');
 }
